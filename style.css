@@ -226,7 +226,10 @@ main, .nav, .footer { position: relative; z-index: 2; }
 .contact { text-align: center; padding-top: 140px; padding-bottom: 140px; }
 .contact .label { margin-bottom: 20px; }
 .contact-title { font-size: clamp(38px, 6vw, 72px); font-weight: 800; margin-bottom: 24px; }
-.contact .pitch { margin: 0 auto 40px; }
+.contact .pitch { margin: 0 auto 20px; }
+.contact-email { margin-bottom: 36px; font-size: clamp(17px, 2.6vw, 24px); overflow-wrap: anywhere; }
+.contact-email a { color: var(--accent); border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+.contact-email a:hover { border-color: var(--accent); }
 .contact-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
 .socials { display: flex; flex-wrap: wrap; justify-content: center; gap: 28px; margin-top: 48px; font-size: 14px; }
 .socials a { display: inline-block; padding: 12px 8px; color: var(--muted); transition: color 0.2s; }
