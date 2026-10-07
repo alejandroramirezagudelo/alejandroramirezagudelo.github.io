@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alejandro Ramirez — Développeur</title>
+  <meta name="description" content="Portfolio d'Alejandro Ramirez, étudiant développeur à Epitech Paris. Projets web (React, Supabase), systèmes Unix en C et cybersécurité.">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230b0d10'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%23b4ff39' font-family='monospace'>&gt;_</text></svg>">
+</head>
+<body>
+  <div class="glow" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#top" class="logo"><span class="accent" aria-hidden="true">&gt;_</span> alejandro.ramirez</a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links" id="menu" aria-label="Navigation principale">
+      <a href="#about"><span class="num">01</span> À propos</a>
+      <a href="#skills"><span class="num">02</span> Stack</a>
+      <a href="#projects"><span class="num">03</span> Projets</a>
+      <a href="#journey"><span class="num">04</span> Parcours</a>
+      <a href="#contact" class="btn btn-small">Me contacter</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="status"><span class="dot" aria-hidden="true"></span> Ouvert aux stages et aux projets</p>
+        <h1>
+          Salut, je suis<br>
+          <span class="name">Alejandro.</span>
+        </h1>
+        <p class="role mono">
+          <span class="sr-only">Développeur web, React et Supabase, programmeur C sous Unix.</span>
+          <span aria-hidden="true"><span class="muted">// </span><span id="typed">Développeur web</span><span class="caret">▍</span></span>
+        </p>
+        <p class="pitch">
+          Étudiant à Epitech Paris, je conçois des outils utiles et soignés —
+          d'une plateforme de commande B2B pour un grossiste à un shell Unix écrit en C.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn">Voir mes projets <span aria-hidden="true">→</span></a>
+          <a href="#contact" class="btn btn-ghost">Me contacter</a>
+        </div>
+      </div>
+
+      <div class="terminal reveal" aria-hidden="true">
+        <div class="terminal-bar">
+          <span></span><span></span><span></span>
+          <p class="mono">~/portfolio — zsh</p>
+        </div>
+        <pre class="terminal-body mono"><code><span class="accent">❯</span> whoami
+<span class="out">alejandro-ramirez · étudiant développeur @ Epitech</span>
+<span class="accent">❯</span> cat localisation.txt
+<span class="out">📍 Paris, France</span>
+<span class="accent">❯</span> ls competences/
+<span class="out tag-line"><span>react</span> <span>supabase</span> <span>sql</span> <span>c</span> <span>tailwind</span></span>
+<span class="accent">❯</span> echo $OBJECTIF
+<span class="out">"Apprendre en construisant."</span>
+<span class="accent">❯</span> <span class="caret">▍</span></code></pre>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2 class="section-title reveal"><span class="num">01.</span> À propos</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Étudiant à <strong>Epitech Paris</strong>, j'aime transformer des idées en produits
+            concrets. Côté web, je travaille avec <strong>React</strong>, <strong>Tailwind CSS</strong>
+            et <strong>Supabase</strong> (PostgreSQL) ; côté systèmes, je code en <strong>C</strong>
+            sous Unix. Je m'intéresse aussi à la <strong>cybersécurité</strong>.
+          </p>
+          <p>
+            Ce qui me motive : voir mon code utilisé au quotidien, comme sur Epfood,
+            une plateforme de commande pensée avec le gérant d'un grossiste alimentaire,
+            et travailler en équipe avec une vraie méthode (branches, pull requests, revues, CI).
+          </p>
+        </div>
+        <ul class="stats reveal">
+          <li><strong data-count="22">22</strong><span>scripts SQL de migration et de sécurisation (RLS) pour Epfood</span></li>
+          <li><strong data-count="6">6</strong><span>fonctions serverless (Edge Functions) codées pour Epfood</span></li>
+          <li><strong data-count="60" data-plus>60</strong><span>projets réalisés à Epitech, seul ou en équipe</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2 class="section-title reveal"><span class="num">02.</span> Ma stack</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h3 class="mono label">Front-end</h3>
+          <ul class="chips">
+            <li>HTML / CSS</li><li>React</li><li>React Router</li><li>Tailwind CSS</li><li>Vite</li><li>i18next</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3 class="mono label">Back-end &amp; données</h3>
+          <ul class="chips">
+            <li>Supabase</li><li>PostgreSQL</li><li>Row Level Security</li><li>Edge Functions</li><li>Resend (e-mails)</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3 class="mono label">Langages</h3>
+          <ul class="chips">
+            <li>C</li><li>JavaScript</li><li>TypeScript</li><li>SQL</li><li>Python</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3 class="mono label">Systèmes Unix</h3>
+          <ul class="chips">
+            <li>Shell (tcsh)</li><li>Processus (fork / exec)</li><li>Redirections</li><li>ncurses</li><li>Makefile</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3 class="mono label">Cybersécurité</h3>
+          <ul class="chips">
+            <li>OWASP Top 10</li><li>OWASP Juice Shop</li><li>Contrôle d'accès</li><li>Rédaction de rapports</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <h3 class="mono label">Outils &amp; méthode</h3>
+          <ul class="chips">
+            <li>Git / GitHub</li><li>Pull requests &amp; revues</li><li>GitHub Actions (CI)</li><li>Vercel</li><li>Claude Code</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section-title reveal"><span class="num">03.</span> Projets</h2>
+
+      <div class="projects">
+        <article class="project featured reveal">
+          <div class="project-visual" style="--hue: 85">
+            <span class="mono" aria-hidden="true">01</span>
+          </div>
+          <div class="project-body">
+            <p class="mono label">Projet phare · pour un grossiste alimentaire</p>
+            <h3>Epfood</h3>
+            <p>
+              Plateforme de commande B2B pour un grossiste. Inscription avec SIRET et validation
+              des comptes par l'admin, catalogue avec promotions, panier HT / TVA / TTC, devis PDF
+              et suivi des commandes. Back-office complet (clients, produits, commandes, tarifs),
+              e-mails automatiques et site traduit en 2 langues.
+            </p>
+            <ul class="tags mono"><li>React</li><li>Supabase</li><li>PostgreSQL</li><li>Tailwind</li><li>Vercel</li></ul>
+            <div class="project-links">
+              <a href="https://epfood.fr" target="_blank" rel="noopener">Voir le site <span aria-hidden="true">↗</span><span class="sr-only"> (nouvel onglet)</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-visual" style="--hue: 200" aria-hidden="true">
+            <span class="mono">02</span>
+          </div>
+          <div class="project-body">
+            <p class="mono label">Epitech · en équipe de 5 · en cours</p>
+            <h3>42sh</h3>
+            <p>
+              Shell Unix inspiré de tcsh, écrit en C : exécution des commandes, redirections,
+              édition de ligne, scripts. Je m'occupe des variables et de la substitution
+              de commandes (backticks). Travail en branches avec revue de code et CI.
+            </p>
+            <ul class="tags mono"><li>C</li><li>Unix</li><li>ncurses</li><li>GitHub Actions</li></ul>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-visual" style="--hue: 320" aria-hidden="true">
+            <span class="mono">03</span>
+          </div>
+          <div class="project-body">
+            <p class="mono label">Epitech · cybersécurité</p>
+            <h3>Hackjuice</h3>
+            <p>
+              Audit de l'application volontairement vulnérable OWASP Juice Shop.
+              Exploitation et documentation de failles de contrôle d'accès
+              (faux avis, manipulation de panier, altération de produits).
+            </p>
+            <ul class="tags mono"><li>OWASP</li><li>Sécurité web</li><li>Pentest</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="journey" class="section">
+      <h2 class="section-title reveal"><span class="num">04.</span> Parcours</h2>
+      <ol class="timeline">
+        <li class="reveal">
+          <p class="mono date">Aujourd'hui</p>
+          <h3>Étudiant en informatique · <span class="muted">Epitech Paris</span></h3>
+          <p>Formation par projets : plus de 60 projets réalisés en développement, systèmes et cybersécurité. Projets en équipe avec branches, pull requests, revues de code et intégration continue.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="contact" class="section contact reveal">
+      <p class="mono label"><span class="num">05.</span> Et maintenant ?</p>
+      <h2 class="contact-title">Un stage, un projet ?<br>Parlons-en.</h2>
+      <p class="pitch">
+        Une question sur mes projets ou une offre à me proposer ? Le plus simple est de m'écrire.
+      </p>
+      <div class="contact-actions">
+        <a href="mailto:alejandro021313@gmail.com" class="btn btn-big">M'écrire un e-mail</a>
+        <button class="btn btn-ghost copy" data-email="alejandro021313@gmail.com">Copier l'e-mail</button>
+      </div>
+      <p class="sr-only" role="status" id="copy-status"></p>
+      <ul class="socials mono">
+        <li><a href="https://github.com/alejandroramirezagudelo" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (nouvel onglet)</span></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer mono">
+    <p>© <span id="year"></span> · Conçu et codé par Alejandro Ramirez</p>
+    <a href="#top">Retour en haut <span aria-hidden="true">↑</span></a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
